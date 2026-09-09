@@ -43,3 +43,5 @@ Then open `http://localhost:8000`.
 - Added VAT number to footer.
 - Added `privacy.html` with privacy and cookie information.
 - No analytics or profiling cookies are enabled; therefore no consent banner is included in this version.
+
+V1.2.2: corrected DD monogram geometry for consistent rendering across desktop and mobile browsers.
