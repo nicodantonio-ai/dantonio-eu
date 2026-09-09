@@ -24,3 +24,12 @@ Then open `http://localhost:8000`.
 - `script.js` — mobile navigation and subtle reveal animation
 - `assets/images/` — web-optimised images
 - `assets/docs/` — Executive CV PDF
+
+
+## V1.1 updates — 09 Sep 2026
+- Public contact email changed to `contact@dantonio.eu`.
+- Added `Book a conversation` CTA linked to Google Calendar Appointment Schedule.
+- Improved hero portrait sizing/cropping on mobile devices.
+- Added VAT number to footer.
+- Added `privacy.html` with privacy and cookie information.
+- No analytics or profiling cookies are enabled; therefore no consent banner is included in this version.
