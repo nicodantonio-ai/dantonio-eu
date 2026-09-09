@@ -1,8 +1,8 @@
-# dantonio.eu V1.2
+# dantonio.eu V1.2.1
 
 Static one-page site for GitHub Pages.
 
-V1.2 updates:
+V1.2.1 updates:
 - Classic Overlap DD personal monogram in official palette
 - favicon based on the DD monogram
 - public Executive CV with protected contact details

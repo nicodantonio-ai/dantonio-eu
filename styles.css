@@ -24,10 +24,10 @@ img{display:block;max-width:100%}
 
 .site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(24,32,51,.08)}
 .nav-wrap{height:70px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{text-decoration:none;font-weight:800;letter-spacing:.08em;font-size:.95rem;color:var(--navy);display:inline-flex;align-items:center;gap:0}
+.brand{text-decoration:none;font-weight:800;letter-spacing:.08em;font-size:.95rem;color:var(--navy);display:inline-flex;align-items:center;gap:0;white-space:nowrap;flex:0 0 auto}
 .brand-monogram{width:40px;height:40px;display:block;margin-right:7px;flex:0 0 auto}
 .brand-apostrophe{font-size:1.15rem;line-height:1;font-weight:800;margin-right:2px;transform:translateY(-2px)}
-.brand-name{letter-spacing:.10em}
+.brand-name{letter-spacing:.10em;white-space:nowrap}
 .site-nav{display:flex;gap:24px;align-items:center}.site-nav a{text-decoration:none;font-size:.9rem;font-weight:700;color:var(--muted)}.site-nav a:hover{color:var(--navy)}
 .menu-toggle{display:none;border:0;background:none;font:inherit;font-weight:700;color:var(--navy)}
 
@@ -64,6 +64,7 @@ h2{font-size:clamp(2.5rem,5.3vw,5rem);line-height:1.02;letter-spacing:-.045em;ma
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.button{transition:none}}
 @media (max-width:960px){
   .site-nav{position:absolute;top:70px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:18px 20px;display:none;flex-direction:column;align-items:flex-start}.site-nav.open{display:flex}.menu-toggle{display:block}
+  .nav-wrap{gap:12px}.brand-monogram{width:36px;height:36px;margin-right:6px}.brand{font-size:.88rem}.brand-apostrophe{font-size:1rem;margin-right:1px;transform:translateY(-1px)}.brand-name{letter-spacing:.08em}.menu-toggle{margin-left:auto;flex:0 0 auto}
   .hero{padding-top:52px}.hero-grid{grid-template-columns:1fr;gap:0}.hero-copy{padding:42px 0 46px}.hero-portrait{justify-content:center;padding-bottom:34px}.hero-portrait img{width:min(100%,520px);aspect-ratio:4/5;max-height:560px;object-fit:cover;object-position:center 24%;border-radius:28px}
   .section-heading.split,.innovation-grid,.contact-grid,.experience-grid{grid-template-columns:1fr;gap:36px}.journey-grid,.expertise-grid,.knowledge-grid{grid-template-columns:1fr 1fr}.metrics{grid-template-columns:repeat(2,1fr)}.metrics>div{border-bottom:1px solid var(--line)}.metrics>div:nth-child(2n){border-right:0}.metrics>div:first-child{padding-left:18px}.education-band{grid-template-columns:1fr}.ai-strip{grid-template-columns:1fr}.ai-strip img{max-height:520px}.ai-strip>div{padding:42px}
 }
