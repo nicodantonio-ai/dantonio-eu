@@ -24,8 +24,10 @@ img{display:block;max-width:100%}
 
 .site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(24,32,51,.08)}
 .nav-wrap{height:70px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{text-decoration:none;font-weight:800;letter-spacing:.08em;font-size:.95rem;color:var(--navy)}
-.brand-mark{display:inline-grid;place-items:center;width:34px;height:34px;margin-right:8px;border:2px solid var(--navy);border-radius:50%;letter-spacing:0}
+.brand{text-decoration:none;font-weight:800;letter-spacing:.08em;font-size:.95rem;color:var(--navy);display:inline-flex;align-items:center;gap:0}
+.brand-monogram{width:40px;height:40px;display:block;margin-right:7px;flex:0 0 auto}
+.brand-apostrophe{font-size:1.15rem;line-height:1;font-weight:800;margin-right:2px;transform:translateY(-2px)}
+.brand-name{letter-spacing:.10em}
 .site-nav{display:flex;gap:24px;align-items:center}.site-nav a{text-decoration:none;font-size:.9rem;font-weight:700;color:var(--muted)}.site-nav a:hover{color:var(--navy)}
 .menu-toggle{display:none;border:0;background:none;font:inherit;font-weight:700;color:var(--navy)}
 
