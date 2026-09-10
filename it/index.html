@@ -57,7 +57,7 @@
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <p class="eyebrow light">DOMENICO D’ANTONIO</p>
-          <h1 id="hero-title">Dalla costruzione dei sistemi<br><span>alla trasformazione delle organizzazioni.</span></h1>
+          <h1 id="hero-title"><span class="hero-line hero-line-light">Dalla costruzione dei sistemi</span><span class="hero-line hero-line-accent">alla trasformazione delle organizzazioni.</span></h1>
           <p class="hero-tags">Governance · Rischio · Innovazione · Trasformazione AI-enabled · Assurance</p>
           <p class="hero-lead">Lavoro con organizzazioni complesse per collegare strategia ed esecuzione e trasformare la complessità in modelli operativi governabili, resilienti e capaci di evolvere.</p>
           <div class="actions">
@@ -110,13 +110,9 @@
       </div>
     </section>
 
-    <section class="visual-profile section" aria-labelledby="visual-profile-title">
+    <section class="visual-profile" aria-labelledby="visual-profile-title">
       <div class="container">
         <div class="visual-profile-card reveal">
-          <button class="visual-profile-image" type="button" data-visual-open aria-label="Apri il profilo visuale Il mio mondo professionale">
-            <img src="../assets/images/my-professional-world.webp" alt="Il mio mondo professionale — sintesi visiva dell’identità professionale, della traiettoria, dei metodi e dei domini di Domenico D’Antonio" width="1536" height="864" loading="lazy" />
-            <span class="visual-profile-zoom" aria-hidden="true">↗</span>
-          </button>
           <div class="visual-profile-copy">
             <p class="eyebrow">PROFILO VISUALE</p>
             <h2 id="visual-profile-title">Il mio mondo professionale</h2>
@@ -124,6 +120,14 @@
             <p>Una sintesi visiva dei sistemi, delle persone, delle tecnologie, dei metodi e delle esperienze che hanno costruito il mio modo di lavorare.</p>
             <button class="text-button" type="button" data-visual-open>Esplora il profilo visuale <span aria-hidden="true">↗</span></button>
           </div>
+          <button class="visual-profile-image visual-profile-image-desktop" type="button" data-visual-open aria-label="Apri il profilo visuale Il mio mondo professionale">
+            <img src="../assets/images/my-professional-world.webp" alt="Il mio mondo professionale — sintesi visiva dell’identità professionale, della traiettoria, dei metodi e dei domini di Domenico D’Antonio" width="1536" height="864" loading="lazy" />
+            <span class="visual-profile-zoom" aria-hidden="true">↗</span>
+          </button>
+          <button class="visual-profile-mobile-teaser" type="button" data-visual-open aria-label="Apri il profilo visuale completo Il mio mondo professionale">
+            <img src="../assets/images/my-professional-world-face-strip.webp" alt="Dettaglio da Il mio mondo professionale" width="475" height="155" loading="lazy" />
+            <span>Guarda la grafica completa</span><span aria-hidden="true">↗</span>
+          </button>
         </div>
       </div>
     </section>
@@ -264,7 +268,10 @@
     <div class="visual-lightbox" data-visual-lightbox hidden role="dialog" aria-modal="true" aria-label="Il mio mondo professionale">
       <button class="visual-lightbox-close" type="button" data-visual-close aria-label="Chiudi il profilo visuale">×</button>
       <div class="visual-lightbox-inner">
-        <img src="../assets/images/my-professional-world.webp" alt="Il mio mondo professionale — profilo visuale completo" width="1536" height="864" />
+        <picture>
+          <source media="(max-width: 640px)" srcset="../assets/images/my-professional-world-vertical.webp" />
+          <img src="../assets/images/my-professional-world.webp" alt="Il mio mondo professionale — profilo visuale completo" width="1536" height="864" />
+        </picture>
       </div>
     </div>
 

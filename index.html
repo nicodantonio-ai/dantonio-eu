@@ -58,7 +58,7 @@
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <p class="eyebrow light">DOMENICO D’ANTONIO</p>
-          <h1 id="hero-title">From systems builder<br><span>to organisational transformer.</span></h1>
+          <h1 id="hero-title"><span class="hero-line hero-line-light">From systems builder</span><span class="hero-line hero-line-accent">to organisational transformer.</span></h1>
           <p class="hero-tags">Governance · Risk · Innovation · AI-enabled Transformation · Assurance</p>
           <p class="hero-lead">I work with complex organisations to connect strategy with execution and turn complexity into governable, resilient and evolving operating models.</p>
           <div class="actions">
@@ -111,13 +111,9 @@
       </div>
     </section>
 
-    <section class="visual-profile section" aria-labelledby="visual-profile-title">
+    <section class="visual-profile" aria-labelledby="visual-profile-title">
       <div class="container">
         <div class="visual-profile-card reveal">
-          <button class="visual-profile-image" type="button" data-visual-open aria-label="Open My Professional World visual profile">
-            <img src="assets/images/my-professional-world.webp" alt="My Professional World — a visual synthesis of Domenico D’Antonio’s professional identity, trajectory, methods and domains" width="1536" height="864" loading="lazy" />
-            <span class="visual-profile-zoom" aria-hidden="true">↗</span>
-          </button>
           <div class="visual-profile-copy">
             <p class="eyebrow">VISUAL PROFILE</p>
             <h2 id="visual-profile-title">My Professional World</h2>
@@ -125,6 +121,14 @@
             <p>A visual synthesis of the systems, people, technologies, methods and experiences that shape the way I work.</p>
             <button class="text-button" type="button" data-visual-open>Explore the visual profile <span aria-hidden="true">↗</span></button>
           </div>
+          <button class="visual-profile-image visual-profile-image-desktop" type="button" data-visual-open aria-label="Open My Professional World visual profile">
+            <img src="assets/images/my-professional-world.webp" alt="My Professional World — a visual synthesis of Domenico D’Antonio’s professional identity, trajectory, methods and domains" width="1536" height="864" loading="lazy" />
+            <span class="visual-profile-zoom" aria-hidden="true">↗</span>
+          </button>
+          <button class="visual-profile-mobile-teaser" type="button" data-visual-open aria-label="Open the complete My Professional World visual profile">
+            <img src="assets/images/my-professional-world-face-strip.webp" alt="Detail from My Professional World" width="475" height="155" loading="lazy" />
+            <span>View the complete visual</span><span aria-hidden="true">↗</span>
+          </button>
         </div>
       </div>
     </section>
@@ -265,7 +269,10 @@
     <div class="visual-lightbox" data-visual-lightbox hidden role="dialog" aria-modal="true" aria-label="My Professional World visual profile">
       <button class="visual-lightbox-close" type="button" data-visual-close aria-label="Close visual profile">×</button>
       <div class="visual-lightbox-inner">
-        <img src="assets/images/my-professional-world.webp" alt="My Professional World — full visual profile" width="1536" height="864" />
+        <picture>
+          <source media="(max-width: 640px)" srcset="assets/images/my-professional-world-vertical.webp" />
+          <img src="assets/images/my-professional-world.webp" alt="My Professional World — full visual profile" width="1536" height="864" />
+        </picture>
       </div>
     </div>
 
