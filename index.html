@@ -17,6 +17,23 @@
   <link rel="alternate" hreflang="en" href="https://www.dantonio.eu/" />
   <link rel="alternate" hreflang="it" href="https://www.dantonio.eu/it/" />
   <link rel="alternate" hreflang="x-default" href="https://www.dantonio.eu/" />
+  <script>
+    // Privacy-friendly first-visit language routing for the static site.
+    // A manual EN/IT choice always wins and is remembered locally.
+    (function () {
+      try {
+        if (location.pathname !== '/' && location.pathname !== '/index.html') return;
+        var saved = localStorage.getItem('dantonio-language');
+        if (saved === 'en') return;
+        if (saved === 'it') { location.replace('/it/'); return; }
+        var langs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || '']).map(function (v) { return String(v).toLowerCase(); });
+        var italianBrowser = langs.some(function (v) { return v === 'it' || v.indexOf('it-') === 0; });
+        var italyTimezone = false;
+        try { italyTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone === 'Europe/Rome'; } catch (e) {}
+        if (italianBrowser || italyTimezone) location.replace('/it/');
+      } catch (e) {}
+    }());
+  </script>
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
   <script type="application/ld+json">
@@ -48,7 +65,7 @@
         <a href="#innovation">Innovation</a>
         <a href="#knowledge">Knowledge</a>
         <a href="#contact">Contact</a>
-        <span class="lang-switch" aria-label="Language"><strong>EN</strong><span>·</span><a href="it/" lang="it" hreflang="it">IT</a></span>
+        <span class="lang-switch" aria-label="Language"><strong>EN</strong><span>·</span><a href="it/" lang="it" hreflang="it" data-language-choice="it">IT</a></span>
       </nav>
     </div>
   </header>

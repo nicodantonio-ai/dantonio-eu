@@ -73,3 +73,10 @@ visualLightbox?.addEventListener('click', event => {
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && visualLightbox && !visualLightbox.hidden) closeVisualProfile();
 });
+
+// Remember an explicit language choice so automatic routing never overrides it.
+document.querySelectorAll('[data-language-choice]').forEach(link => {
+  link.addEventListener('click', () => {
+    try { localStorage.setItem('dantonio-language', link.dataset.languageChoice); } catch (e) {}
+  });
+});

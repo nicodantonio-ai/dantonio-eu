@@ -26,9 +26,12 @@ No analytics or advertising trackers are included in this version.
 
 V1.4: added bilingual My Professional World / Il mio mondo professionale visual-profile strip with responsive lightbox.
 
-## v1.4.1
+## v1.4.2
 - Refined desktop hero typography to prevent excessive word wrapping.
 - Reduced the gap between the About manifesto and Visual Profile.
 - Desktop Visual Profile now shows the complete landscape artwork without cropping.
 - Mobile Visual Profile starts with the blue editorial panel and uses a focused face strip as the click-through teaser.
 - Mobile lightbox opens the supplied vertical artwork; desktop opens the landscape artwork.
+
+
+V1.4.2: hardened the desktop Hero against browser zoom/resizing and added privacy-friendly automatic Italian routing on first visit using browser language / Europe-Rome timezone, while preserving explicit EN/IT choices.
