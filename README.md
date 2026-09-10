@@ -1,47 +1,27 @@
-# dantonio.eu V1.2.1
+# dantonio.eu — V1.3 bilingual
 
-Static one-page site for GitHub Pages.
+Static one-page website for GitHub Pages.
 
-V1.2.1 updates:
-- Classic Overlap DD personal monogram in official palette
-- favicon based on the DD monogram
-- public Executive CV with protected contact details
-- retains responsive mobile hero, booking CTA, privacy page and VAT footer from V1.1
+## Languages
+- English: `/`
+- Italian: `/it/`
+- English privacy: `/privacy.html`
+- Italian privacy: `/it/privacy.html`
 
-# dantonio.eu — V1
+The EN/IT language switch is available in the main navigation and privacy pages. English remains the default language.
 
-Static one-page site ready for GitHub Pages.
+## Deploy
+Upload the contents of this folder to the root of the existing GitHub repository. Do not change GitHub Pages, DNS, custom domain or HTTPS settings.
 
-## Local preview
-Run a local server from this folder:
+## Current external services
+- Google Calendar appointment link: Book a conversation / Prenota una conversazione
+- LinkedIn
+- GitHub Pages hosting
 
-```bash
-python -m http.server 8000
-```
-
-Then open `http://localhost:8000`.
-
-## GitHub Pages
-1. Create a GitHub repository and upload all files in this folder.
-2. In GitHub: Settings → Pages → Deploy from a branch → `main` / root.
-3. Add the custom domain `www.dantonio.eu` (or `dantonio.eu`).
-4. Configure Aruba DNS according to GitHub Pages custom-domain instructions.
-5. Enable **Enforce HTTPS** once the certificate is issued.
-
-## Main files
-- `index.html` — content and semantic structure
-- `styles.css` — full responsive design
-- `script.js` — mobile navigation and subtle reveal animation
-- `assets/images/` — web-optimised images
-- `assets/docs/` — Executive CV PDF
+No analytics or advertising trackers are included in this version.
 
 
-## V1.1 updates — 09 Sep 2026
-- Public contact email changed to `contact@dantonio.eu`.
-- Added `Book a conversation` CTA linked to Google Calendar Appointment Schedule.
-- Improved hero portrait sizing/cropping on mobile devices.
-- Added VAT number to footer.
-- Added `privacy.html` with privacy and cookie information.
-- No analytics or profiling cookies are enabled; therefore no consent banner is included in this version.
+## v1.3.1
+- Fixed Back to top / Torna su on mobile with a dedicated smooth-scroll handler and reduced-motion fallback.
 
-V1.2.2: corrected DD monogram geometry for consistent rendering across desktop and mobile browsers.
+V1.4: added bilingual My Professional World / Il mio mondo professionale visual-profile strip with responsive lightbox.

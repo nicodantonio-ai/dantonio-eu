@@ -9,9 +9,14 @@
   <meta property="og:title" content="Domenico D’Antonio — From systems builder to organisational transformer" />
   <meta property="og:description" content="Governance · Risk · Innovation · AI-enabled Transformation · Assurance" />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:locale:alternate" content="it_IT" />
   <meta property="og:url" content="https://www.dantonio.eu/" />
   <meta property="og:image" content="https://www.dantonio.eu/assets/images/domenico-hero.webp" />
   <link rel="canonical" href="https://www.dantonio.eu/" />
+  <link rel="alternate" hreflang="en" href="https://www.dantonio.eu/" />
+  <link rel="alternate" hreflang="it" href="https://www.dantonio.eu/it/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.dantonio.eu/" />
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
   <script type="application/ld+json">
@@ -43,6 +48,7 @@
         <a href="#innovation">Innovation</a>
         <a href="#knowledge">Knowledge</a>
         <a href="#contact">Contact</a>
+        <span class="lang-switch" aria-label="Language"><strong>EN</strong><span>·</span><a href="it/" lang="it" hreflang="it">IT</a></span>
       </nav>
     </div>
   </header>
@@ -101,6 +107,24 @@
 
         <div class="manifesto reveal">
           <p>Technology taught me how systems work.<br>Business taught me why they matter.<br>Auditing taught me how organisations really operate.<br><strong>Transformation is where I bring those perspectives together.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="visual-profile section" aria-labelledby="visual-profile-title">
+      <div class="container">
+        <div class="visual-profile-card reveal">
+          <button class="visual-profile-image" type="button" data-visual-open aria-label="Open My Professional World visual profile">
+            <img src="assets/images/my-professional-world.webp" alt="My Professional World — a visual synthesis of Domenico D’Antonio’s professional identity, trajectory, methods and domains" width="1536" height="864" loading="lazy" />
+            <span class="visual-profile-zoom" aria-hidden="true">↗</span>
+          </button>
+          <div class="visual-profile-copy">
+            <p class="eyebrow">VISUAL PROFILE</p>
+            <h2 id="visual-profile-title">My Professional World</h2>
+            <p class="visual-profile-kicker">Systems. People. Technology. Transformation. Impact.</p>
+            <p>A visual synthesis of the systems, people, technologies, methods and experiences that shape the way I work.</p>
+            <button class="text-button" type="button" data-visual-open>Explore the visual profile <span aria-hidden="true">↗</span></button>
+          </div>
         </div>
       </div>
     </section>
@@ -238,12 +262,19 @@
         </div>
       </div>
     </section>
+    <div class="visual-lightbox" data-visual-lightbox hidden role="dialog" aria-modal="true" aria-label="My Professional World visual profile">
+      <button class="visual-lightbox-close" type="button" data-visual-close aria-label="Close visual profile">×</button>
+      <div class="visual-lightbox-inner">
+        <img src="assets/images/my-professional-world.webp" alt="My Professional World — full visual profile" width="1536" height="864" />
+      </div>
+    </div>
+
   </main>
 
   <footer class="site-footer">
     <div class="container footer-wrap">
       <span>© <span id="year"></span> Domenico D’Antonio · P.IVA 01896420591</span>
-      <div class="footer-links"><a href="privacy.html">Privacy & Cookies</a><a href="#top">Back to top ↑</a></div>
+      <div class="footer-links"><a href="privacy.html">Privacy & Cookies</a><a class="back-to-top" href="#top">Back to top ↑</a></div>
     </div>
   </footer>
 

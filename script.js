@@ -28,4 +28,48 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
   reveals.forEach(el => el.classList.add('visible'));
 }
 
-document.getElementById('year').textContent = new Date().getFullYear();
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+// Reliable Back to top / Torna su behavior on mobile browsers.
+document.querySelectorAll('.back-to-top').forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, left: 0, behavior: reducedMotion ? 'auto' : 'smooth' });
+    // Keep the URL clean and avoid a stale #top fragment after scrolling.
+    if (history.replaceState) {
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  });
+});
+
+// Visual profile lightbox.
+const visualLightbox = document.querySelector('[data-visual-lightbox]');
+const visualOpeners = document.querySelectorAll('[data-visual-open]');
+const visualCloser = document.querySelector('[data-visual-close]');
+let lastVisualTrigger = null;
+
+function openVisualProfile(event) {
+  if (!visualLightbox) return;
+  lastVisualTrigger = event?.currentTarget || null;
+  visualLightbox.hidden = false;
+  document.body.classList.add('lightbox-open');
+  visualCloser?.focus();
+}
+
+function closeVisualProfile() {
+  if (!visualLightbox) return;
+  visualLightbox.hidden = true;
+  document.body.classList.remove('lightbox-open');
+  lastVisualTrigger?.focus();
+}
+
+visualOpeners.forEach(button => button.addEventListener('click', openVisualProfile));
+visualCloser?.addEventListener('click', closeVisualProfile);
+visualLightbox?.addEventListener('click', event => {
+  if (event.target === visualLightbox) closeVisualProfile();
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && visualLightbox && !visualLightbox.hidden) closeVisualProfile();
+});
